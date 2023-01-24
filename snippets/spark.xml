@@ -198,7 +198,7 @@
   <project path="external/erofs-utils" name="platform/external/erofs-utils" remote="aosp" revision="75d73335d25d52afd6a09c116207cd09bece16ab" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="spark" />
+  <project path="frameworks/av" name="frameworks_av" remote="spark-exp" />
   <project path="frameworks/base" name="frameworks_base" remote="spark-exp" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="spark" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="spark" />
@@ -209,7 +209,7 @@
   <project path="art" name="art" remote="spark" />
   <project path="bionic" name="bionic" remote="spark" />
   <project path="bootable/recovery" name="bootable_recovery" remote="spark" />
-  <project path="build/make" name="build_make" remote="spark" >
+  <project path="build/make" name="build_make" remote="spark-exp" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -226,7 +226,7 @@
 
   <!-- Hardware repos -->
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="spark" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="spark" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="spark-exp" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="spark" />
   <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github">
     <!-- add guard for AOSP hardware/qcom dir -->
@@ -317,7 +317,7 @@
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="spark" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="spark" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="spark" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spark" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spark-exp" />
   <project path="packages/apps/SparkWallpaperStub" name="packages_apps_SparkWallpaperStub" remote="spark" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="spark" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="spark" />
@@ -340,7 +340,7 @@
   <project path="packages/modules/adb" name="packages_modules_adb" remote="spark" />
 
   <!-- System repos -->
-  <project path="system/bt" name="system_bt" remote="spark" />
+  <project path="system/bt" name="system_bt" remote="spark-exp" />
   <project path="system/core" name="system_core" remote="spark" />
   <project path="system/netd" name="system_netd" remote="spark" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
@@ -360,14 +360,14 @@
   <!-- vendor repos -->
   <project path="vendor/gms" name="android_vendor_gms" remote="spark-gitlab" clone-depth="1" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
-  <project path="vendor/spark" name="platform_vendor_spark" remote="spark" />
+  <project path="vendor/spark" name="platform_vendor_spark" remote="spark-exp" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" remote="spark" />
   <project path="vendor/support" name="platform_vendor_support" remote="spark" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="spark" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" remote="evo" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="evo" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="evo" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="evo" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="spark-exp" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
   <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="arrow"/>
